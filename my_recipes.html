@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Recipes | What Can I Make?</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <a href="/" class="brand">
+
+        <span class="brand-icon">
+            🍳
+        </span>
+
+        <span>
+            What Can I Make?
+        </span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#find">
+            Find Recipes
+        </a>
+
+        <a href="/#categories">
+            Categories
+        </a>
+
+        <a href="/favorites">
+            ❤️ Favorites
+        </a>
+
+        <a href="/my-recipes">
+            📝 My Recipes
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- MY RECIPES -->
+
+<main>
+
+<section class="results-section">
+
+
+    <div class="results-heading">
+
+        <span class="eyebrow">
+            YOUR COLLECTION
+        </span>
+
+        <h1>
+            📝 My Recipes
+        </h1>
+
+        <p>
+            Your personal recipes, saved in one place.
+        </p>
+
+    </div>
+
+
+
+    <div class="create-recipe-top">
+
+        <a
+            href="{{ url_for('create_recipe') }}"
+            class="save-recipe-btn"
+        >
+            + Create New Recipe
+        </a>
+
+    </div>
+
+
+
+    {% if recipes %}
+
+        <div class="results-grid">
+
+            {% for recipe in recipes %}
+
+                <div class="result-card">
+
+
+                    <div class="match">
+                        📝
+                    </div>
+
+
+                    <h2>
+                        {{ recipe[1] }}
+                    </h2>
+
+
+                    <p>
+                        ⏱ {{ recipe[3] }}
+                        ·
+                        {{ recipe[4] }}
+                    </p>
+
+
+                    <div class="result-info">
+
+                        <strong>
+                            Ingredients:
+                        </strong>
+
+                        <span>
+                            {{ recipe[2] }}
+                        </span>
+
+                    </div>
+
+
+                    
+
+                     <div class="recipe-card-actions">
+
+    <a
+        href="{{ url_for(
+            'my_recipe_detail',
+            recipe_id=recipe[0]
+        ) }}"
+        class="view-recipe-btn"
+    >
+        👩‍🍳 View Recipe
+    </a>
+
+
+    <form
+        action="{{ url_for(
+            'delete_my_recipe',
+            recipe_id=recipe[0]
+        ) }}"
+        method="POST"
+    >
+
+        <button
+            type="submit"
+            class="delete-recipe-btn"
+            onclick="return confirm('Delete this recipe?')"
+        >
+            🗑 Delete
+        </button>
+
+    </form>
+
+
+
+                    </div>
+
+
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+
+    {% else %}
+
+        <div class="no-results">
+
+            <h2>
+                📝 No Personal Recipes Yet
+            </h2>
+
+            <p>
+                Create your first recipe and save it
+                to your personal collection.
+            </p>
+
+            <a
+                href="{{ url_for('create_recipe') }}"
+                class="save-recipe-btn"
+            >
+                + Create My First Recipe
+            </a>
+
+        </div>
+
+    {% endif %}
+
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <a href="/" class="brand">
+
+            <span class="brand-icon">
+                🍳
+            </span>
+
+            <span>
+                What Can I Make?
+            </span>
+
+        </a>
+
+        <p>
+            Make more. Waste less. Eat well.
+        </p>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 What Can I Make?
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

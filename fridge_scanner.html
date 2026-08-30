@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>AI Fridge Scanner | What Can I Make?</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <a href="/" class="brand">
+
+        <span class="brand-icon">
+            🍳
+        </span>
+
+        <span>
+            What Can I Make?
+        </span>
+
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#find">
+            Find Recipes
+        </a>
+
+        <a href="/#categories">
+            Categories
+        </a>
+
+        <a href="/#about">
+            About
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="results-section">
+
+    <div class="results-heading">
+
+        <span class="eyebrow">
+            AI FRIDGE SCANNER
+        </span>
+
+        <h1>
+            What's inside your fridge? 📸
+        </h1>
+
+        <p>
+            Upload a clear photo of your fridge and
+            AI will identify the ingredients for you.
+        </p>
+
+    </div>
+
+
+    <form
+        action="/scan-fridge"
+        method="POST"
+        enctype="multipart/form-data"
+    >
+
+        <input
+            type="file"
+            name="fridge_image"
+            accept="image/*"
+            required
+        >
+
+        <button
+            type="submit"
+            class="secondary-btn"
+        >
+            🤖 Scan My Fridge
+        </button>
+
+    </form>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-brand">
+
+        <a href="/" class="brand">
+
+            <span class="brand-icon">
+                🍳
+            </span>
+
+            <span>
+                What Can I Make?
+            </span>
+
+        </a>
+
+        <p>
+            Make more. Waste less. Eat well.
+        </p>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 What Can I Make?
+    </p>
+
+</footer>
+
+</body>
+
+</html>

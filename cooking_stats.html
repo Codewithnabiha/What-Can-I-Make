@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cooking Stats | What Can I Make?</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="navbar-left">
+
+        <a href="/" class="brand">
+
+            <span class="brand-icon">
+                🍳
+            </span>
+
+            <span>
+                What Can I Make?
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="eyebrow">
+                YOUR PROGRESS
+            </span>
+
+            <h1>
+                📊 Cooking Stats
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <div class="category-card">
+
+            <span>❤️</span>
+
+            <strong>
+                {{ total_favorites }}
+            </strong>
+
+            <small>
+                Favorite Recipes
+            </small>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <span>📝</span>
+
+            <strong>
+                {{ total_personal_recipes }}
+            </strong>
+
+            <small>
+                Recipes You Created
+            </small>
+
+        </div>
+
+
+        <div class="category-card">
+
+            <span>🍳</span>
+
+            <strong>
+                Keep Cooking!
+            </strong>
+
+            <small>
+                More delicious recipes await
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div style="text-align:center; margin-top:40px;">
+
+        <a href="/" class="primary-btn">
+            Find More Recipes →
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+</body>
+
+</html>

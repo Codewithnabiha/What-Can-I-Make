@@ -1,0 +1,1709 @@
+[
+  {
+    "name": "Chocolate Pancakes",
+    "ingredients": ["eggs", "flour", "milk", "chocolate"],
+    "time": "15 min",
+    "difficulty": "Easy",
+    "emoji": "🥞",
+    "steps": [
+      "Mix eggs and milk in a bowl.",
+      "Add flour and mix until smooth.",
+      "Add chocolate pieces and mix gently.",
+      "Heat a pan over medium heat.",
+      "Pour the batter into the pan.",
+      "Cook both sides until golden and serve."
+    ]
+  },
+  {
+    "name": "French Toast",
+    "ingredients": ["bread", "eggs", "milk", "sugar"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🍞",
+    "steps": [
+      "Whisk eggs, milk and sugar together.",
+      "Dip each slice of bread into the mixture.",
+      "Heat a pan over medium heat.",
+      "Cook the bread on both sides until golden.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Omelette",
+    "ingredients": ["eggs", "onion", "tomato", "salt"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🍳",
+    "steps": [
+      "Beat the eggs in a bowl.",
+      "Add chopped onion, tomato and salt.",
+      "Heat a pan over medium heat.",
+      "Pour in the egg mixture.",
+      "Cook until the eggs are set.",
+      "Fold the omelette and serve."
+    ]
+  },
+  {
+    "name": "Aloo Paratha",
+    "ingredients": ["potato", "flour", "onion", "salt", "chili"],
+    "time": "35 min",
+    "difficulty": "Medium",
+    "emoji": "🫓",
+    "steps": [
+      "Boil and mash the potatoes.",
+      "Mix potatoes with onion, salt and chili.",
+      "Prepare dough using flour.",
+      "Fill the dough with the potato mixture.",
+      "Roll it into a flat paratha.",
+      "Cook on a hot pan until golden on both sides."
+    ]
+  },
+  {
+    "name": "Chicken Fried Rice",
+    "ingredients": ["chicken", "rice", "eggs", "onion", "garlic"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍚",
+    "steps": [
+      "Cook the chicken until fully cooked.",
+      "Add onion and garlic and cook until fragrant.",
+      "Add cooked rice and mix well.",
+      "Add eggs and stir everything together.",
+      "Cook for a few more minutes and serve."
+    ]
+  },
+  {
+    "name": "Creamy Pasta",
+    "ingredients": ["pasta", "milk", "cheese", "garlic"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍝",
+    "steps": [
+      "Boil the pasta until cooked.",
+      "Cook garlic in a pan.",
+      "Add milk and cheese.",
+      "Stir until the sauce becomes creamy.",
+      "Add the cooked pasta.",
+      "Mix well and serve."
+    ]
+  },
+  {
+    "name": "Cheese Toast",
+    "ingredients": ["bread", "cheese", "butter"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🧀",
+    "steps": [
+      "Spread butter on the bread.",
+      "Add cheese on top.",
+      "Heat a pan over medium heat.",
+      "Toast the bread until golden.",
+      "Cook until the cheese melts.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Egg Sandwich",
+    "ingredients": ["bread", "eggs", "cheese", "salt"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🥪",
+    "steps": [
+      "Cook the eggs in a pan.",
+      "Season with salt.",
+      "Place the eggs on bread.",
+      "Add cheese.",
+      "Cover with another slice of bread.",
+      "Toast lightly and serve."
+    ]
+  },
+  {
+    "name": "Garlic Pasta",
+    "ingredients": ["pasta", "garlic", "butter", "salt"],
+    "time": "20 min",
+    "difficulty": "Easy",
+    "emoji": "🍝",
+    "steps": [
+      "Boil the pasta until tender.",
+      "Melt butter in a pan.",
+      "Add chopped garlic and cook briefly.",
+      "Add the cooked pasta.",
+      "Season with salt.",
+      "Mix well and serve."
+    ]
+  },
+  {
+    "name": "Vegetable Fried Rice",
+    "ingredients": ["rice", "carrot", "peas", "onion", "soy sauce"],
+    "time": "20 min",
+    "difficulty": "Easy",
+    "emoji": "🍚",
+    "steps": [
+      "Heat a pan and cook the onion.",
+      "Add carrot and peas.",
+      "Add cooked rice.",
+      "Pour in soy sauce.",
+      "Mix everything together.",
+      "Cook for a few minutes and serve."
+    ]
+  },
+  {
+    "name": "Banana Pancakes",
+    "ingredients": ["banana", "eggs", "flour", "milk"],
+    "time": "15 min",
+    "difficulty": "Easy",
+    "emoji": "🍌",
+    "steps": [
+      "Mash the banana in a bowl.",
+      "Add eggs and milk.",
+      "Add flour and mix well.",
+      "Heat a pan over medium heat.",
+      "Pour the batter into the pan.",
+      "Cook both sides until golden."
+    ]
+  },
+  {
+    "name": "Egg Fried Rice",
+    "ingredients": ["rice", "eggs", "onion", "garlic", "soy sauce"],
+    "time": "15 min",
+    "difficulty": "Easy",
+    "emoji": "🍳",
+    "steps": [
+      "Cook the onion and garlic in a pan.",
+      "Add beaten eggs and scramble.",
+      "Add cooked rice.",
+      "Add soy sauce.",
+      "Mix everything together.",
+      "Cook for a few minutes and serve."
+    ]
+  },
+  {
+    "name": "Chicken Sandwich",
+    "ingredients": ["bread", "chicken", "cheese", "mayonnaise"],
+    "time": "15 min",
+    "difficulty": "Easy",
+    "emoji": "🥪",
+    "steps": [
+      "Cook the chicken until fully cooked.",
+      "Shred or slice the chicken.",
+      "Spread mayonnaise on the bread.",
+      "Add chicken and cheese.",
+      "Cover with another slice of bread.",
+      "Toast lightly and serve."
+    ]
+  },
+  {
+    "name": "Chicken Pasta",
+    "ingredients": ["chicken", "pasta", "milk", "cheese"],
+    "time": "30 min",
+    "difficulty": "Medium",
+    "emoji": "🍝",
+    "steps": [
+      "Boil the pasta.",
+      "Cook the chicken in a pan.",
+      "Add milk and cheese.",
+      "Stir until the sauce becomes creamy.",
+      "Add the pasta.",
+      "Mix everything together and serve."
+    ]
+  },
+  {
+    "name": "Aloo Egg Curry",
+    "ingredients": ["potato", "eggs", "onion", "tomato", "salt"],
+    "time": "30 min",
+    "difficulty": "Medium",
+    "emoji": "🥔",
+    "steps": [
+      "Boil the eggs and potatoes.",
+      "Cook chopped onion in a pan.",
+      "Add chopped tomato and salt.",
+      "Add potatoes and mix well.",
+      "Add boiled eggs.",
+      "Cook together for a few minutes and serve."
+    ]
+  },
+  {
+    "name": "Chicken Biryani",
+    "ingredients": ["chicken", "rice", "onion", "tomato", "spices"],
+    "time": "50 min",
+    "difficulty": "Medium",
+    "emoji": "🍛",
+    "steps": [
+      "Cook onions until golden.",
+      "Add chicken and cook thoroughly.",
+      "Add tomatoes and spices.",
+      "Cook until the chicken is tender.",
+      "Add cooked rice.",
+      "Mix gently and cook covered for a few minutes."
+    ]
+  },
+  {
+    "name": "Daal",
+    "ingredients": ["lentils", "onion", "tomato", "garlic", "salt"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🥣",
+    "steps": [
+      "Wash the lentils.",
+      "Cook lentils until soft.",
+      "Cook onion and garlic in a pan.",
+      "Add tomatoes and salt.",
+      "Add the cooked lentils.",
+      "Simmer for a few minutes and serve."
+    ]
+  },
+  {
+    "name": "Aloo Gobi",
+    "ingredients": ["potato", "cauliflower", "onion", "tomato", "spices"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🥔",
+    "steps": [
+      "Cut potatoes and cauliflower into small pieces.",
+      "Cook onion in a pan.",
+      "Add tomatoes and spices.",
+      "Add potatoes and cauliflower.",
+      "Cover and cook until tender.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Chicken Karahi",
+    "ingredients": ["chicken", "tomato", "onion", "garlic", "spices"],
+    "time": "40 min",
+    "difficulty": "Medium",
+    "emoji": "🍗",
+    "steps": [
+      "Heat oil in a pan.",
+      "Cook the chicken until lightly browned.",
+      "Add onion and garlic.",
+      "Add tomatoes and spices.",
+      "Cook until the chicken is tender.",
+      "Serve hot with bread or rice."
+    ]
+  },
+  {
+    "name": "Potato Sandwich",
+    "ingredients": ["potato", "bread", "onion", "salt"],
+    "time": "15 min",
+    "difficulty": "Easy",
+    "emoji": "🥪",
+    "steps": [
+      "Boil and mash the potatoes.",
+      "Mix with chopped onion and salt.",
+      "Spread the mixture on bread.",
+      "Cover with another slice.",
+      "Toast until golden.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Chocolate Mug Cake",
+    "ingredients": ["flour", "milk", "sugar", "chocolate"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🍫",
+    "steps": [
+      "Add flour, sugar and chocolate to a mug.",
+      "Add milk and mix well.",
+      "Mix until the batter is smooth.",
+      "Cook in a microwave until set.",
+      "Let it cool slightly.",
+      "Enjoy your mug cake."
+    ]
+  },
+  {
+    "name": "Chocolate Milkshake",
+    "ingredients": ["milk", "chocolate", "sugar", "ice"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🥤",
+    "steps": [
+      "Add milk to a blender.",
+      "Add chocolate and sugar.",
+      "Add ice.",
+      "Blend until smooth.",
+      "Pour into a glass.",
+      "Serve cold."
+    ]
+  },
+  {
+    "name": "Banana Milkshake",
+    "ingredients": ["banana", "milk", "sugar", "ice"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🍌",
+    "steps": [
+      "Peel and slice the banana.",
+      "Add banana and milk to a blender.",
+      "Add sugar and ice.",
+      "Blend until smooth.",
+      "Pour into a glass.",
+      "Serve cold."
+    ]
+  },
+  {
+    "name": "Egg Salad",
+    "ingredients": ["eggs", "mayonnaise", "onion", "salt"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🥗",
+    "steps": [
+      "Boil the eggs.",
+      "Peel and chop the eggs.",
+      "Add chopped onion.",
+      "Add mayonnaise and salt.",
+      "Mix gently.",
+      "Serve as a salad or with bread."
+    ]
+  },
+  {
+    "name": "Chickpea Salad",
+    "ingredients": ["chickpeas", "tomato", "onion", "lemon", "salt"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🥗",
+    "steps": [
+      "Drain and rinse the chickpeas.",
+      "Chop the tomato and onion.",
+      "Add everything to a bowl.",
+      "Add lemon juice and salt.",
+      "Mix well.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "name": "Fruit Yogurt Bowl",
+    "ingredients": ["yogurt", "banana", "apple", "sugar"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🍎",
+    "steps": [
+      "Add yogurt to a bowl.",
+      "Chop the banana and apple.",
+      "Add the fruits to the yogurt.",
+      "Add a little sugar if desired.",
+      "Mix gently.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Tomato Egg Toast",
+    "ingredients": ["bread", "eggs", "tomato", "salt"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🍅",
+    "steps": [
+      "Beat the eggs in a bowl.",
+      "Add chopped tomato and salt.",
+      "Dip the bread into the mixture.",
+      "Heat a pan.",
+      "Cook the bread on both sides.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Cheesy Scrambled Eggs",
+    "ingredients": ["eggs", "cheese", "milk", "salt"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🧀",
+    "steps": [
+      "Beat eggs with milk and salt.",
+      "Heat a pan over medium heat.",
+      "Add the egg mixture.",
+      "Stir gently while cooking.",
+      "Add cheese.",
+      "Cook until the cheese melts and serve."
+    ]
+  },
+  {
+    "name": "Spicy Potato Fry",
+    "ingredients": ["potato", "onion", "chili", "salt"],
+    "time": "20 min",
+    "difficulty": "Easy",
+    "emoji": "🥔",
+    "steps": [
+      "Cut potatoes into small pieces.",
+      "Heat oil in a pan.",
+      "Add potatoes and cook until tender.",
+      "Add onion and chili.",
+      "Season with salt.",
+      "Cook until lightly golden and serve."
+    ]
+  },
+  {
+    "name": "Vegetable Omelette",
+    "ingredients": ["eggs", "onion", "tomato", "carrot", "salt"],
+    "time": "12 min",
+    "difficulty": "Easy",
+    "emoji": "🍳",
+    "steps": [
+      "Beat the eggs in a bowl.",
+      "Add chopped onion, tomato and carrot.",
+      "Season with salt.",
+      "Heat a pan over medium heat.",
+      "Pour in the egg mixture and cook until set.",
+      "Fold and serve hot."
+    ]
+  },
+  {
+    "name": "Cheese Omelette",
+    "ingredients": ["eggs", "cheese", "onion", "salt"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🧀",
+    "steps": [
+      "Beat the eggs with salt.",
+      "Add chopped onion.",
+      "Heat a pan over medium heat.",
+      "Pour in the egg mixture.",
+      "Add cheese on top.",
+      "Fold the omelette and serve."
+    ]
+  },
+  {
+    "name": "Egg Paratha",
+    "ingredients": ["flour", "eggs", "onion", "chili", "salt"],
+    "time": "20 min",
+    "difficulty": "Medium",
+    "emoji": "🫓",
+    "steps": [
+      "Prepare dough using flour and water.",
+      "Beat eggs with onion, chili and salt.",
+      "Roll the dough into a flat circle.",
+      "Pour the egg mixture over it.",
+      "Cook on a hot pan until golden.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "French Toast with Banana",
+    "ingredients": ["bread", "eggs", "milk", "banana"],
+    "time": "12 min",
+    "difficulty": "Easy",
+    "emoji": "🍌",
+    "steps": [
+      "Whisk eggs and milk together.",
+      "Dip the bread into the mixture.",
+      "Heat a pan over medium heat.",
+      "Cook both sides until golden.",
+      "Slice the banana.",
+      "Serve the toast with banana."
+    ]
+  },
+  {
+    "name": "Peanut Butter Toast",
+    "ingredients": ["bread", "peanut butter", "banana"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🍞",
+    "steps": [
+      "Toast the bread lightly.",
+      "Spread peanut butter over the toast.",
+      "Slice the banana.",
+      "Place banana slices on top.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Vegetable Sandwich",
+    "ingredients": ["bread", "tomato", "onion", "cucumber", "mayonnaise"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🥪",
+    "steps": [
+      "Spread mayonnaise on the bread.",
+      "Slice the tomato, onion and cucumber.",
+      "Place the vegetables on the bread.",
+      "Season lightly with salt.",
+      "Cover with another slice.",
+      "Serve fresh or toasted."
+    ]
+  },
+  {
+    "name": "Chicken Wrap",
+    "ingredients": ["chicken", "flour", "onion", "tomato", "mayonnaise"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🌯",
+    "steps": [
+      "Cook the chicken until fully cooked.",
+      "Slice the onion and tomato.",
+      "Spread mayonnaise over the flatbread.",
+      "Add chicken and vegetables.",
+      "Roll the flatbread tightly.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Chicken Burger",
+    "ingredients": ["chicken", "bread", "cheese", "tomato", "mayonnaise"],
+    "time": "30 min",
+    "difficulty": "Medium",
+    "emoji": "🍔",
+    "steps": [
+      "Cook the chicken until fully cooked.",
+      "Toast the burger buns lightly.",
+      "Spread mayonnaise on the buns.",
+      "Add chicken, tomato and cheese.",
+      "Cover with the top bun.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Chicken Nuggets",
+    "ingredients": ["chicken", "flour", "eggs", "salt", "chili"],
+    "time": "30 min",
+    "difficulty": "Medium",
+    "emoji": "🍗",
+    "steps": [
+      "Cut chicken into small pieces.",
+      "Season with salt and chili.",
+      "Dip the chicken in beaten egg.",
+      "Coat with flour.",
+      "Cook until golden and fully cooked.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Chicken Soup",
+    "ingredients": ["chicken", "carrot", "onion", "garlic", "salt"],
+    "time": "35 min",
+    "difficulty": "Easy",
+    "emoji": "🍲",
+    "steps": [
+      "Cook chicken in water until fully cooked.",
+      "Add chopped onion and carrot.",
+      "Add garlic and salt.",
+      "Simmer until the vegetables are tender.",
+      "Shred the chicken.",
+      "Serve the soup hot."
+    ]
+  },
+  {
+    "name": "Chicken Tikka",
+    "ingredients": ["chicken", "yogurt", "lemon", "chili", "spices"],
+    "time": "40 min",
+    "difficulty": "Medium",
+    "emoji": "🍗",
+    "steps": [
+      "Cut chicken into small pieces.",
+      "Mix yogurt, lemon, chili and spices.",
+      "Coat the chicken with the mixture.",
+      "Let it marinate.",
+      "Cook the chicken until fully cooked.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Chicken Curry",
+    "ingredients": ["chicken", "onion", "tomato", "garlic", "spices"],
+    "time": "40 min",
+    "difficulty": "Medium",
+    "emoji": "🍛",
+    "steps": [
+      "Cook chopped onion until golden.",
+      "Add garlic and cook briefly.",
+      "Add chicken and cook thoroughly.",
+      "Add tomatoes and spices.",
+      "Add water and simmer until tender.",
+      "Serve with rice or bread."
+    ]
+  },
+  {
+    "name": "Chicken Pulao",
+    "ingredients": ["chicken", "rice", "onion", "garlic", "spices"],
+    "time": "45 min",
+    "difficulty": "Medium",
+    "emoji": "🍚",
+    "steps": [
+      "Cook onion until golden.",
+      "Add chicken and spices.",
+      "Cook until the chicken is tender.",
+      "Add washed rice.",
+      "Add water and cook until the rice is tender.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Chicken Shawarma",
+    "ingredients": ["chicken", "bread", "yogurt", "tomato", "cucumber"],
+    "time": "30 min",
+    "difficulty": "Medium",
+    "emoji": "🌯",
+    "steps": [
+      "Cook seasoned chicken until fully cooked.",
+      "Slice the chicken.",
+      "Spread yogurt sauce over the bread.",
+      "Add chicken, tomato and cucumber.",
+      "Roll the bread tightly.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Chicken Macaroni",
+    "ingredients": ["chicken", "macaroni", "onion", "tomato", "cheese"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🍝",
+    "steps": [
+      "Boil macaroni until tender.",
+      "Cook chicken with onion.",
+      "Add chopped tomato.",
+      "Add the cooked macaroni.",
+      "Add cheese and mix well.",
+      "Cook for a few minutes and serve."
+    ]
+  },
+  {
+    "name": "Chicken Cheese Pasta",
+    "ingredients": ["chicken", "pasta", "cheese", "milk", "garlic"],
+    "time": "30 min",
+    "difficulty": "Medium",
+    "emoji": "🍝",
+    "steps": [
+      "Boil the pasta until tender.",
+      "Cook chicken with garlic.",
+      "Add milk and cheese.",
+      "Stir until creamy.",
+      "Add the cooked pasta.",
+      "Mix well and serve."
+    ]
+  },
+  {
+    "name": "Chicken Potato Curry",
+    "ingredients": ["chicken", "potato", "onion", "tomato", "spices"],
+    "time": "40 min",
+    "difficulty": "Medium",
+    "emoji": "🥔",
+    "steps": [
+      "Cook onion until golden.",
+      "Add chicken and cook thoroughly.",
+      "Add tomatoes and spices.",
+      "Add chopped potatoes.",
+      "Add water and simmer until tender.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Chicken Vegetable Stir Fry",
+    "ingredients": ["chicken", "carrot", "peas", "onion", "soy sauce"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🥕",
+    "steps": [
+      "Cook chicken until fully cooked.",
+      "Add onion and cook briefly.",
+      "Add carrots and peas.",
+      "Add soy sauce.",
+      "Stir fry everything together.",
+      "Serve hot with rice."
+    ]
+  },
+  {
+    "name": "Chicken Fried Noodles",
+    "ingredients": ["chicken", "noodles", "onion", "carrot", "soy sauce"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍜",
+    "steps": [
+      "Boil the noodles until tender.",
+      "Cook chicken in a pan.",
+      "Add onion and carrot.",
+      "Add the cooked noodles.",
+      "Add soy sauce and mix well.",
+      "Cook for a few minutes and serve."
+    ]
+  },
+  {
+    "name": "Tomato Pasta",
+    "ingredients": ["pasta", "tomato", "garlic", "onion", "salt"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍝",
+    "steps": [
+      "Boil the pasta until tender.",
+      "Cook onion and garlic in a pan.",
+      "Add chopped tomatoes.",
+      "Season with salt.",
+      "Add the cooked pasta.",
+      "Mix well and serve."
+    ]
+  },
+  {
+    "name": "Cheesy Macaroni",
+    "ingredients": ["macaroni", "milk", "cheese", "butter"],
+    "time": "20 min",
+    "difficulty": "Easy",
+    "emoji": "🧀",
+    "steps": [
+      "Boil macaroni until tender.",
+      "Melt butter in a pan.",
+      "Add milk and cheese.",
+      "Stir until creamy.",
+      "Add the macaroni.",
+      "Mix well and serve."
+    ]
+  },
+  {
+    "name": "Vegetable Pasta",
+    "ingredients": ["pasta", "carrot", "peas", "onion", "tomato"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🥕",
+    "steps": [
+      "Boil the pasta.",
+      "Cook onion in a pan.",
+      "Add carrot and peas.",
+      "Add chopped tomato.",
+      "Add cooked pasta.",
+      "Mix everything and serve."
+    ]
+  },
+  {
+    "name": "Spicy Garlic Noodles",
+    "ingredients": ["noodles", "garlic", "chili", "soy sauce"],
+    "time": "15 min",
+    "difficulty": "Easy",
+    "emoji": "🍜",
+    "steps": [
+      "Boil the noodles until tender.",
+      "Cook garlic in a pan.",
+      "Add chili and soy sauce.",
+      "Add the cooked noodles.",
+      "Mix everything together.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Vegetable Noodles",
+    "ingredients": ["noodles", "carrot", "peas", "onion", "soy sauce"],
+    "time": "20 min",
+    "difficulty": "Easy",
+    "emoji": "🍜",
+    "steps": [
+      "Boil the noodles.",
+      "Cook onion in a pan.",
+      "Add carrot and peas.",
+      "Add cooked noodles.",
+      "Pour in soy sauce.",
+      "Mix and serve hot."
+    ]
+  },
+  {
+    "name": "Tomato Rice",
+    "ingredients": ["rice", "tomato", "onion", "garlic", "salt"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍚",
+    "steps": [
+      "Cook onion and garlic in a pan.",
+      "Add chopped tomatoes.",
+      "Add washed rice.",
+      "Add water and salt.",
+      "Cook until the rice is tender.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Vegetable Pulao",
+    "ingredients": ["rice", "carrot", "peas", "onion", "spices"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🍚",
+    "steps": [
+      "Cook onion until lightly golden.",
+      "Add carrots and peas.",
+      "Add washed rice and spices.",
+      "Add water.",
+      "Cook until the rice is tender.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Lemon Rice",
+    "ingredients": ["rice", "lemon", "onion", "salt", "chili"],
+    "time": "20 min",
+    "difficulty": "Easy",
+    "emoji": "🍋",
+    "steps": [
+      "Cook the rice until tender.",
+      "Cook onion in a pan.",
+      "Add chili and salt.",
+      "Add the cooked rice.",
+      "Add lemon juice.",
+      "Mix gently and serve."
+    ]
+  },
+  {
+    "name": "Egg Noodles",
+    "ingredients": ["noodles", "eggs", "onion", "soy sauce"],
+    "time": "15 min",
+    "difficulty": "Easy",
+    "emoji": "🍜",
+    "steps": [
+      "Boil the noodles.",
+      "Cook onion in a pan.",
+      "Add beaten eggs and scramble.",
+      "Add cooked noodles.",
+      "Add soy sauce.",
+      "Mix well and serve."
+    ]
+  },
+  {
+    "name": "Masala Rice",
+    "ingredients": ["rice", "onion", "tomato", "chili", "spices"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍚",
+    "steps": [
+      "Cook onion until golden.",
+      "Add tomatoes and chili.",
+      "Add spices.",
+      "Add cooked rice.",
+      "Mix everything together.",
+      "Cook for a few minutes and serve."
+    ]
+  },
+  {
+    "name": "Chana Masala",
+    "ingredients": ["chickpeas", "onion", "tomato", "chili", "spices"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🥘",
+    "steps": [
+      "Cook onion in a pan.",
+      "Add tomatoes and chili.",
+      "Add spices.",
+      "Add cooked chickpeas.",
+      "Add a little water.",
+      "Simmer and serve hot."
+    ]
+  },
+  {
+    "name": "Rajma Curry",
+    "ingredients": ["kidney beans", "onion", "tomato", "garlic", "spices"],
+    "time": "35 min",
+    "difficulty": "Medium",
+    "emoji": "🥘",
+    "steps": [
+      "Cook onion and garlic.",
+      "Add chopped tomatoes.",
+      "Add spices.",
+      "Add cooked kidney beans.",
+      "Add water and simmer.",
+      "Serve hot with rice."
+    ]
+  },
+  {
+    "name": "Bhindi Masala",
+    "ingredients": ["okra", "onion", "tomato", "chili", "spices"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🥘",
+    "steps": [
+      "Wash and cut the okra.",
+      "Cook onion in a pan.",
+      "Add tomatoes and chili.",
+      "Add spices.",
+      "Add okra and cook until tender.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Chana Chaat",
+    "ingredients": ["chickpeas", "tomato", "onion", "lemon", "chili"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🥗",
+    "steps": [
+      "Add cooked chickpeas to a bowl.",
+      "Add chopped tomato and onion.",
+      "Add chili.",
+      "Add lemon juice.",
+      "Mix everything well.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "name": "Daal Chawal",
+    "ingredients": ["lentils", "rice", "onion", "tomato", "salt"],
+    "time": "35 min",
+    "difficulty": "Easy",
+    "emoji": "🍚",
+    "steps": [
+      "Wash and cook the lentils until soft.",
+      "Cook onion and tomato separately.",
+      "Add the mixture to the lentils.",
+      "Season with salt.",
+      "Cook rice until tender.",
+      "Serve the daal with rice."
+    ]
+  },
+  {
+    "name": "Mixed Vegetable Curry",
+    "ingredients": ["potato", "carrot", "peas", "tomato", "spices"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🥘",
+    "steps": [
+      "Cut the vegetables into small pieces.",
+      "Cook tomatoes with spices.",
+      "Add potatoes, carrots and peas.",
+      "Add water.",
+      "Cover and cook until tender.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Palak Potato",
+    "ingredients": ["spinach", "potato", "onion", "tomato", "spices"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🥔",
+    "steps": [
+      "Wash and chop the spinach.",
+      "Cook onion in a pan.",
+      "Add tomato and spices.",
+      "Add chopped potatoes.",
+      "Add spinach and cook until tender.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Aloo Matar",
+    "ingredients": ["potato", "peas", "onion", "tomato", "spices"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🥔",
+    "steps": [
+      "Cook onion until soft.",
+      "Add tomatoes and spices.",
+      "Add potatoes and peas.",
+      "Add a little water.",
+      "Cover and cook until tender.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Lobia Curry",
+    "ingredients": ["black eyed beans", "onion", "tomato", "garlic", "spices"],
+    "time": "35 min",
+    "difficulty": "Medium",
+    "emoji": "🥘",
+    "steps": [
+      "Cook onion and garlic.",
+      "Add tomatoes and spices.",
+      "Add cooked beans.",
+      "Add some water.",
+      "Simmer until the curry thickens.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Vegetable Samosa",
+    "ingredients": ["potato", "peas", "flour", "onion", "spices"],
+    "time": "40 min",
+    "difficulty": "Medium",
+    "emoji": "🥟",
+    "steps": [
+      "Boil and mash the potatoes.",
+      "Add peas, onion and spices.",
+      "Prepare dough using flour.",
+      "Fill the dough with the potato mixture.",
+      "Shape into samosas.",
+      "Cook until golden."
+    ]
+  },
+  {
+    "name": "Potato Cutlets",
+    "ingredients": ["potato", "eggs", "bread", "onion", "salt"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🥔",
+    "steps": [
+      "Boil and mash the potatoes.",
+      "Add chopped onion and salt.",
+      "Shape the mixture into small cutlets.",
+      "Dip them in beaten egg.",
+      "Coat with breadcrumbs.",
+      "Cook until golden."
+    ]
+  },
+  {
+    "name": "Cheese Sandwich Toast",
+    "ingredients": ["bread", "cheese", "tomato", "butter"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🥪",
+    "steps": [
+      "Spread butter on the bread.",
+      "Add cheese and tomato slices.",
+      "Cover with another slice.",
+      "Heat a pan.",
+      "Toast both sides until golden.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Tuna Sandwich",
+    "ingredients": ["bread", "tuna", "mayonnaise", "onion", "salt"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🥪",
+    "steps": [
+      "Drain the tuna.",
+      "Mix tuna with mayonnaise.",
+      "Add chopped onion and salt.",
+      "Spread the mixture on bread.",
+      "Cover with another slice.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "name": "Corn Sandwich",
+    "ingredients": ["bread", "corn", "cheese", "mayonnaise"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🌽",
+    "steps": [
+      "Mix corn with mayonnaise.",
+      "Add cheese.",
+      "Spread the mixture on bread.",
+      "Cover with another slice.",
+      "Toast until the cheese melts.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Potato Roll",
+    "ingredients": ["potato", "bread", "onion", "chili", "salt"],
+    "time": "20 min",
+    "difficulty": "Easy",
+    "emoji": "🌯",
+    "steps": [
+      "Boil and mash potatoes.",
+      "Add onion, chili and salt.",
+      "Flatten the bread slices.",
+      "Place potato mixture inside.",
+      "Roll the bread tightly.",
+      "Toast until golden."
+    ]
+  },
+  {
+    "name": "Chicken Cheese Roll",
+    "ingredients": ["chicken", "bread", "cheese", "onion"],
+    "time": "20 min",
+    "difficulty": "Easy",
+    "emoji": "🌯",
+    "steps": [
+      "Cook and shred the chicken.",
+      "Add chopped onion.",
+      "Place chicken and cheese on bread.",
+      "Roll the bread tightly.",
+      "Toast until golden.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Garlic Bread",
+    "ingredients": ["bread", "garlic", "butter", "cheese"],
+    "time": "15 min",
+    "difficulty": "Easy",
+    "emoji": "🥖",
+    "steps": [
+      "Mix butter with chopped garlic.",
+      "Spread the mixture over bread.",
+      "Add cheese on top.",
+      "Heat until the bread becomes crisp.",
+      "Let the cheese melt.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "French Fries",
+    "ingredients": ["potato", "salt", "chili"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍟",
+    "steps": [
+      "Peel and cut the potatoes into strips.",
+      "Wash and dry them.",
+      "Cook until golden and crisp.",
+      "Drain excess oil.",
+      "Season with salt and chili.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Masala Fries",
+    "ingredients": ["potato", "chili", "salt", "spices"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍟",
+    "steps": [
+      "Cut potatoes into strips.",
+      "Cook until golden.",
+      "Drain excess oil.",
+      "Add chili, salt and spices.",
+      "Toss everything together.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Apple Smoothie",
+    "ingredients": ["apple", "milk", "sugar", "ice"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🍎",
+    "steps": [
+      "Peel and chop the apple.",
+      "Add apple and milk to a blender.",
+      "Add sugar and ice.",
+      "Blend until smooth.",
+      "Pour into a glass.",
+      "Serve cold."
+    ]
+  },
+  {
+    "name": "Strawberry Milkshake",
+    "ingredients": ["strawberry", "milk", "sugar", "ice"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🍓",
+    "steps": [
+      "Wash and chop the strawberries.",
+      "Add strawberries and milk to a blender.",
+      "Add sugar and ice.",
+      "Blend until smooth.",
+      "Pour into a glass.",
+      "Serve cold."
+    ]
+  },
+  {
+    "name": "Mango Smoothie",
+    "ingredients": ["mango", "milk", "sugar", "ice"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🥭",
+    "steps": [
+      "Peel and chop the mango.",
+      "Add mango and milk to a blender.",
+      "Add sugar and ice.",
+      "Blend until smooth.",
+      "Pour into a glass.",
+      "Serve cold."
+    ]
+  },
+  {
+    "name": "Mango Yogurt Smoothie",
+    "ingredients": ["mango", "yogurt", "sugar", "ice"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🥭",
+    "steps": [
+      "Peel and chop the mango.",
+      "Add mango and yogurt to a blender.",
+      "Add sugar and ice.",
+      "Blend until smooth.",
+      "Pour into a glass.",
+      "Serve chilled."
+    ]
+  },
+  {
+    "name": "Strawberry Yogurt Bowl",
+    "ingredients": ["strawberry", "yogurt", "sugar", "banana"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🍓",
+    "steps": [
+      "Add yogurt to a bowl.",
+      "Slice the strawberries and banana.",
+      "Add the fruits to the yogurt.",
+      "Add sugar if desired.",
+      "Mix gently.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Apple Cinnamon Oatmeal",
+    "ingredients": ["oats", "milk", "apple", "sugar"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🍎",
+    "steps": [
+      "Add oats and milk to a pan.",
+      "Cook over medium heat.",
+      "Chop the apple.",
+      "Add apple and sugar.",
+      "Cook until creamy.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Chocolate Oatmeal",
+    "ingredients": ["oats", "milk", "chocolate", "sugar"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🍫",
+    "steps": [
+      "Add oats and milk to a pan.",
+      "Cook until soft.",
+      "Add chocolate and sugar.",
+      "Stir until the chocolate melts.",
+      "Cook until creamy.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Banana Oatmeal",
+    "ingredients": ["oats", "banana", "milk", "sugar"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🍌",
+    "steps": [
+      "Mash the banana.",
+      "Add oats and milk to a pan.",
+      "Add the mashed banana.",
+      "Cook until creamy.",
+      "Add sugar if desired.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Chocolate Banana Smoothie",
+    "ingredients": ["banana", "milk", "chocolate", "ice"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🍫",
+    "steps": [
+      "Slice the banana.",
+      "Add banana and milk to a blender.",
+      "Add chocolate and ice.",
+      "Blend until smooth.",
+      "Pour into a glass.",
+      "Serve cold."
+    ]
+  },
+  {
+    "name": "Vanilla Milkshake",
+    "ingredients": ["milk", "sugar", "ice", "vanilla"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🥤",
+    "steps": [
+      "Add milk to a blender.",
+      "Add sugar and vanilla.",
+      "Add ice.",
+      "Blend until smooth.",
+      "Pour into a glass.",
+      "Serve cold."
+    ]
+  },
+  {
+    "name": "Mango Yogurt Bowl",
+    "ingredients": ["mango", "yogurt", "banana", "sugar"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🥭",
+    "steps": [
+      "Add yogurt to a bowl.",
+      "Chop the mango and banana.",
+      "Add the fruits to the yogurt.",
+      "Add sugar if desired.",
+      "Mix gently.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Apple Banana Salad",
+    "ingredients": ["apple", "banana", "yogurt", "sugar"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🍎",
+    "steps": [
+      "Chop the apple and banana.",
+      "Add them to a bowl.",
+      "Add yogurt.",
+      "Add a little sugar.",
+      "Mix gently.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "name": "Chocolate Banana Toast",
+    "ingredients": ["bread", "banana", "chocolate", "butter"],
+    "time": "10 min",
+    "difficulty": "Easy",
+    "emoji": "🍫",
+    "steps": [
+      "Spread butter on the bread.",
+      "Add banana slices.",
+      "Add chocolate pieces.",
+      "Cover with another slice.",
+      "Toast until golden.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Honey Banana Toast",
+    "ingredients": ["bread", "banana", "honey", "butter"],
+    "time": "8 min",
+    "difficulty": "Easy",
+    "emoji": "🍯",
+    "steps": [
+      "Toast the bread lightly.",
+      "Spread butter over the toast.",
+      "Add banana slices.",
+      "Drizzle with honey.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Strawberry Toast",
+    "ingredients": ["bread", "strawberry", "yogurt", "sugar"],
+    "time": "8 min",
+    "difficulty": "Easy",
+    "emoji": "🍓",
+    "steps": [
+      "Toast the bread.",
+      "Spread yogurt over the toast.",
+      "Slice the strawberries.",
+      "Place strawberries on top.",
+      "Add a little sugar if desired.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "name": "Chocolate Bread Pudding",
+    "ingredients": ["bread", "milk", "eggs", "sugar", "chocolate"],
+    "time": "35 min",
+    "difficulty": "Medium",
+    "emoji": "🍫",
+    "steps": [
+      "Cut bread into small pieces.",
+      "Mix milk, eggs and sugar.",
+      "Add chocolate pieces.",
+      "Pour the mixture over the bread.",
+      "Bake until set.",
+      "Let it cool slightly and serve."
+    ]
+  },
+  {
+    "name": "Banana Bread",
+    "ingredients": ["banana", "flour", "eggs", "sugar", "milk"],
+    "time": "45 min",
+    "difficulty": "Medium",
+    "emoji": "🍌",
+    "steps": [
+      "Mash the bananas.",
+      "Add eggs, milk and sugar.",
+      "Add flour and mix well.",
+      "Pour the batter into a baking pan.",
+      "Bake until fully cooked.",
+      "Let it cool and slice."
+    ]
+  },
+  {
+    "name": "Simple Vanilla Cake",
+    "ingredients": ["flour", "eggs", "milk", "sugar", "butter"],
+    "time": "45 min",
+    "difficulty": "Medium",
+    "emoji": "🍰",
+    "steps": [
+      "Mix eggs, sugar and butter.",
+      "Add milk and flour.",
+      "Mix until smooth.",
+      "Pour into a baking pan.",
+      "Bake until fully cooked.",
+      "Let it cool before serving."
+    ]
+  },
+  {
+    "name": "Chocolate Cake",
+    "ingredients": ["flour", "eggs", "milk", "sugar", "chocolate"],
+    "time": "45 min",
+    "difficulty": "Medium",
+    "emoji": "🍫",
+    "steps": [
+      "Mix eggs and sugar.",
+      "Add milk and melted chocolate.",
+      "Add flour and mix well.",
+      "Pour into a baking pan.",
+      "Bake until fully cooked.",
+      "Let it cool and serve."
+    ]
+  },
+  {
+    "name": "Chocolate Cookies",
+    "ingredients": ["flour", "butter", "sugar", "chocolate", "eggs"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍪",
+    "steps": [
+      "Mix butter and sugar.",
+      "Add the egg.",
+      "Add flour and chocolate pieces.",
+      "Shape the mixture into small cookies.",
+      "Bake until lightly golden.",
+      "Let them cool before serving."
+    ]
+  },
+  {
+    "name": "Sugar Cookies",
+    "ingredients": ["flour", "butter", "sugar", "eggs"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍪",
+    "steps": [
+      "Mix butter and sugar.",
+      "Add the egg.",
+      "Add flour and mix into dough.",
+      "Shape the dough into cookies.",
+      "Bake until lightly golden.",
+      "Let them cool and serve."
+    ]
+  },
+  {
+    "name": "Cinnamon Toast",
+    "ingredients": ["bread", "butter", "sugar", "cinnamon"],
+    "time": "8 min",
+    "difficulty": "Easy",
+    "emoji": "🍞",
+    "steps": [
+      "Spread butter on the bread.",
+      "Mix sugar with cinnamon.",
+      "Sprinkle the mixture over the bread.",
+      "Toast until golden.",
+      "Let it cool slightly.",
+      "Serve warm."
+    ]
+  },
+  {
+    "name": "Yogurt Fruit Parfait",
+    "ingredients": ["yogurt", "banana", "apple", "strawberry", "sugar"],
+    "time": "8 min",
+    "difficulty": "Easy",
+    "emoji": "🍓",
+    "steps": [
+      "Add yogurt to a glass.",
+      "Add chopped fruits.",
+      "Add another layer of yogurt.",
+      "Add more fruit on top.",
+      "Add sugar if desired.",
+      "Serve chilled."
+    ]
+  },
+  {
+    "name": "Honey Yogurt Bowl",
+    "ingredients": ["yogurt", "banana", "apple", "honey"],
+    "time": "5 min",
+    "difficulty": "Easy",
+    "emoji": "🍯",
+    "steps": [
+      "Add yogurt to a bowl.",
+      "Chop the banana and apple.",
+      "Add the fruits.",
+      "Drizzle honey over the top.",
+      "Mix gently.",
+      "Serve immediately."
+    ]
+  },
+  {
+    "name": "Creamy Potato Soup",
+    "ingredients": ["potato", "milk", "onion", "butter", "salt"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🥣",
+    "steps": [
+      "Cook onion in butter.",
+      "Add chopped potatoes.",
+      "Add water and cook until tender.",
+      "Mash the potatoes slightly.",
+      "Add milk and salt.",
+      "Simmer until creamy and serve."
+    ]
+  },
+  {
+    "name": "Tomato Soup",
+    "ingredients": ["tomato", "onion", "garlic", "salt", "butter"],
+    "time": "25 min",
+    "difficulty": "Easy",
+    "emoji": "🍅",
+    "steps": [
+      "Cook onion and garlic in butter.",
+      "Add chopped tomatoes.",
+      "Add water and salt.",
+      "Cook until the tomatoes are soft.",
+      "Blend until smooth.",
+      "Serve hot."
+    ]
+  },
+  {
+    "name": "Vegetable Soup",
+    "ingredients": ["carrot", "peas", "potato", "onion", "salt"],
+    "time": "30 min",
+    "difficulty": "Easy",
+    "emoji": "🥣",
+    "steps": [
+      "Chop all the vegetables.",
+      "Cook onion in a pot.",
+      "Add carrots, peas and potatoes.",
+      "Add water and salt.",
+      "Cook until the vegetables are tender.",
+      "Serve hot."
+    ]
+  }
+  ,
+{
+  "name": "Vegetable Chow Mein",
+  "ingredients": ["noodles", "carrot", "cabbage", "capsicum", "soy sauce"],
+  "time": "20 min",
+  "difficulty": "Easy",
+  "emoji": "🍜",
+  "steps": [
+    "Boil the noodles until tender.",
+    "Slice the carrot, cabbage and capsicum.",
+    "Heat oil in a pan and cook the vegetables.",
+    "Add the cooked noodles.",
+    "Add soy sauce and mix well.",
+    "Cook for a few minutes and serve hot."
+  ]
+},
+{
+  "name": "Paneer Curry",
+  "ingredients": ["paneer", "tomato", "onion", "garlic", "spices"],
+  "time": "30 min",
+  "difficulty": "Medium",
+  "emoji": "🥘",
+  "steps": [
+    "Cut the paneer into small cubes.",
+    "Cook onion and garlic in a pan.",
+    "Add tomatoes and spices.",
+    "Cook until the tomatoes become soft.",
+    "Add paneer and mix gently.",
+    "Cook for a few minutes and serve hot."
+  ]
+},
+{
+  "name": "Vegetable Fried Noodles",
+  "ingredients": ["noodles", "carrot", "peas", "onion", "soy sauce"],
+  "time": "20 min",
+  "difficulty": "Easy",
+  "emoji": "🍜",
+  "steps": [
+    "Boil the noodles until tender.",
+    "Cook onion in a pan.",
+    "Add carrot and peas.",
+    "Add the cooked noodles.",
+    "Pour in soy sauce.",
+    "Mix everything together and serve."
+  ]
+},
+{
+  "name": "Palak Paneer",
+  "ingredients": ["spinach", "paneer", "onion", "tomato", "spices"],
+  "time": "35 min",
+  "difficulty": "Medium",
+  "emoji": "🥬",
+  "steps": [
+    "Wash and chop the spinach.",
+    "Cook onion and tomato in a pan.",
+    "Add spices and cook briefly.",
+    "Add spinach and cook until soft.",
+    "Add paneer cubes.",
+    "Cook for a few minutes and serve hot."
+  ]
+},
+{
+  "name": "Vegetable Korma",
+  "ingredients": ["potato", "carrot", "peas", "yogurt", "spices"],
+  "time": "35 min",
+  "difficulty": "Medium",
+  "emoji": "🥘",
+  "steps": [
+    "Cut the vegetables into small pieces.",
+    "Cook the potatoes, carrots and peas.",
+    "Add yogurt and spices.",
+    "Mix everything gently.",
+    "Add a little water and simmer.",
+    "Cook until the vegetables are tender and serve."
+  ]
+},
+{
+  "name": "Cheese Vegetable Wrap",
+  "ingredients": ["flour", "cheese", "capsicum", "tomato", "onion"],
+  "time": "15 min",
+  "difficulty": "Easy",
+  "emoji": "🌯",
+  "steps": [
+    "Prepare a flatbread using flour.",
+    "Slice the capsicum, tomato and onion.",
+    "Cook the vegetables briefly in a pan.",
+    "Place the vegetables and cheese on the flatbread.",
+    "Roll the flatbread tightly.",
+    "Toast lightly and serve warm."
+  ]
+},
+{
+  "name": "Vegetable Cutlets",
+  "ingredients": ["potato", "carrot", "peas", "bread", "salt"],
+  "time": "25 min",
+  "difficulty": "Easy",
+  "emoji": "🥔",
+  "steps": [
+    "Boil and mash the potatoes.",
+    "Add cooked carrots and peas.",
+    "Add salt and mix well.",
+    "Shape the mixture into small cutlets.",
+    "Coat with breadcrumbs.",
+    "Cook until golden and serve."
+  ]
+},
+{
+  "name": "Mushroom Pasta",
+  "ingredients": ["pasta", "mushroom", "milk", "cheese", "garlic"],
+  "time": "25 min",
+  "difficulty": "Easy",
+  "emoji": "🍝",
+  "steps": [
+    "Boil the pasta until tender.",
+    "Cook garlic and mushrooms in a pan.",
+    "Add milk and cheese.",
+    "Stir until the sauce becomes creamy.",
+    "Add the cooked pasta.",
+    "Mix well and serve."
+  ]
+},
+{
+  "name": "Vegetable Pizza Toast",
+  "ingredients": ["bread", "cheese", "tomato", "onion", "capsicum"],
+  "time": "15 min",
+  "difficulty": "Easy",
+  "emoji": "🍕",
+  "steps": [
+    "Place bread slices on a pan.",
+    "Add tomato, onion and capsicum.",
+    "Add cheese on top.",
+    "Cook over low heat.",
+    "Cover until the cheese melts.",
+    "Serve warm."
+  ]
+},
+{
+  "name": "Creamy Vegetable Soup",
+  "ingredients": ["carrot", "potato", "peas", "milk", "onion"],
+  "time": "30 min",
+  "difficulty": "Easy",
+  "emoji": "🥣",
+  "steps": [
+    "Chop the vegetables into small pieces.",
+    "Cook onion in a pot.",
+    "Add carrots, potatoes and peas.",
+    "Add water and cook until tender.",
+    "Add milk and simmer gently.",
+    "Blend slightly and serve hot."
+  ]
+}
+]
