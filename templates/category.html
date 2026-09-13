@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Explore Recipes | What Can I Make?</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <a href="/" class="brand">
+
+        <span class="brand-icon">
+            🍳
+        </span>
+
+        <span>
+            What Can I Make?
+        </span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#find">
+            Find Recipes
+        </a>
+
+        <a href="/#categories">
+            Categories
+        </a>
+
+        <a href="/#about">
+            About
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- CATEGORY RECIPES -->
+
+<main>
+
+<section class="results-section">
+
+
+    <div class="results-heading">
+
+        <span class="eyebrow">
+            EXPLORE
+        </span>
+
+
+        {% if category == "breakfast" %}
+
+            <h1>
+                🍳 Breakfast
+            </h1>
+
+            <p>
+                Start your day with something delicious.
+            </p>
+
+
+        {% elif category == "quick" %}
+
+            <h1>
+                ⚡ Quick & Easy
+            </h1>
+
+            <p>
+                Delicious recipes ready in 30 minutes or less.
+            </p>
+
+
+        {% elif category == "pakistani" %}
+
+            <h1>
+                🇵🇰 Pakistani Favorites
+            </h1>
+
+            <p>
+                Enjoy delicious desi comfort food.
+            </p>
+
+
+        {% elif category == "budget" %}
+
+    <h1>
+        💰 Budget Friendly
+    </h1>
+
+    <p>
+        Delicious meals made with simple ingredients.
+    </p>
+
+{% elif category == "vegetarian" %}
+
+    <h1>
+        🥬 Vegetarian Recipes
+    </h1>
+
+    <p>
+        Delicious meat-free recipes.
+    </p>
+
+{% elif category == "vegan" %}
+
+    <h1>
+        🌱 Vegan Recipes
+    </h1>
+
+    <p>
+        Fresh and completely plant-based recipes.
+    </p>
+
+{% elif category == "healthy" %}
+
+    <h1>
+        💚 Healthy Recipes
+    </h1>
+
+    <p>
+        Simple and nutritious meals.
+    </p>
+
+{% else %}
+
+    <h1>
+        🍽️ All Recipes
+    </h1>
+
+    <p>
+        Explore all our recipes.
+    </p>
+
+{% endif %}
+    </div>
+
+
+
+    <!-- SEARCH & FILTERS -->
+
+    <div class="recipe-tools">
+
+        <!-- SEARCH -->
+
+        <div class="recipe-search">
+
+            <span>
+                🔍
+            </span>
+
+            <input
+                type="text"
+                id="recipeSearch"
+                placeholder="Search recipes..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <!-- FILTERS -->
+
+        <div class="recipe-filters">
+
+
+            <select id="difficultyFilter">
+
+                <option value="all">
+                    All Difficulties
+                </option>
+
+                <option value="easy">
+                    Easy
+                </option>
+
+                <option value="medium">
+                    Medium
+                </option>
+
+            </select>
+
+
+            <select id="timeFilter">
+
+                <option value="all">
+                    Any Time
+                </option>
+
+                <option value="15">
+                    Under 15 min
+                </option>
+
+                <option value="30">
+                    Under 30 min
+                </option>
+
+                <option value="45">
+                    Under 45 min
+                </option>
+
+            </select>
+
+
+            <button
+                type="button"
+                id="clearFilters"
+            >
+                Clear Filters
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- RESULT COUNT -->
+
+    <div class="recipe-count">
+
+        Showing
+        <strong id="visibleCount">
+            {{ recipes|length }}
+        </strong>
+        recipes
+
+    </div>
+
+
+
+    <!-- RECIPES -->
+
+    {% if recipes %}
+
+        <div class="results-grid" id="recipeGrid">
+
+            {% for recipe in recipes %}
+
+                <div
+                    class="result-card recipe-item"
+
+                    data-name="{{ recipe.name | lower }}"
+
+                    data-ingredients="{{ recipe.ingredients | join(' ') | lower }}"
+
+                    data-difficulty="{{ recipe.difficulty | lower }}"
+
+                    data-time="{{ recipe.time.replace('min', '').strip() }}"
+                >
+
+
+                    <div class="match">
+                        {{ recipe.emoji }}
+                    </div>
+
+
+                    <h2>
+                        {{ recipe.name }}
+                    </h2>
+
+
+                    <p>
+
+                        ⏱ {{ recipe.time }}
+
+                        ·
+
+                        {{ recipe.difficulty }}
+
+                    </p>
+
+
+                    <div class="result-info">
+
+                        <strong>
+                            Ingredients:
+                        </strong>
+
+                        <span>
+                            {{ recipe.ingredients | join(", ") }}
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="{{ url_for(
+                            'recipe_detail',
+                            recipe_name=recipe.name
+                        ) }}"
+                        class="view-recipe-btn"
+                    >
+
+                        View Recipe →
+
+                    </a>
+
+
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+
+        <!-- NO SEARCH RESULTS -->
+
+        <div
+            class="no-results"
+            id="noSearchResults"
+            style="display: none;"
+        >
+
+            <h2>
+                🔍 No recipes found
+            </h2>
+
+            <p>
+                Try another recipe name, ingredient, or filter.
+            </p>
+
+        </div>
+
+
+    {% else %}
+
+
+        <div class="no-results">
+
+            <h2>
+                😕 No recipes found
+            </h2>
+
+            <p>
+                We couldn't find recipes in this category yet.
+            </p>
+
+            <a href="/#categories">
+                ← Back to Categories
+            </a>
+
+        </div>
+
+    {% endif %}
+
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <a href="/" class="brand">
+
+            <span class="brand-icon">
+                🍳
+            </span>
+
+            <span>
+                What Can I Make?
+            </span>
+
+        </a>
+
+        <p>
+            Make more. Waste less. Eat well.
+        </p>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 What Can I Make?
+    </p>
+
+</footer>
+
+
+
+<!-- SEARCH & FILTER JAVASCRIPT -->
+
+<script>
+
+const searchInput = document.getElementById("recipeSearch");
+
+const difficultyFilter =
+    document.getElementById("difficultyFilter");
+
+const timeFilter =
+    document.getElementById("timeFilter");
+
+const clearFilters =
+    document.getElementById("clearFilters");
+
+const recipeItems =
+    document.querySelectorAll(".recipe-item");
+
+const visibleCount =
+    document.getElementById("visibleCount");
+
+const noSearchResults =
+    document.getElementById("noSearchResults");
+
+
+function filterRecipes() {
+
+    const searchValue =
+        searchInput.value
+            .toLowerCase()
+            .trim();
+
+    const difficultyValue =
+        difficultyFilter.value;
+
+    const timeValue =
+        timeFilter.value;
+
+
+    let count = 0;
+
+
+    recipeItems.forEach(recipe => {
+
+        const name =
+            recipe.dataset.name;
+
+        const ingredients =
+            recipe.dataset.ingredients;
+
+        const difficulty =
+            recipe.dataset.difficulty;
+
+        const recipeTime =
+            parseInt(recipe.dataset.time);
+
+
+        // Search
+
+        const matchesSearch =
+            name.includes(searchValue) ||
+            ingredients.includes(searchValue);
+
+
+        // Difficulty
+
+        const matchesDifficulty =
+            difficultyValue === "all" ||
+            difficulty === difficultyValue;
+
+
+        // Time
+
+        let matchesTime = true;
+
+
+        if (timeValue !== "all") {
+
+            matchesTime =
+                recipeTime <= parseInt(timeValue);
+
+        }
+
+
+        // Final result
+
+        if (
+            matchesSearch &&
+            matchesDifficulty &&
+            matchesTime
+        ) {
+
+            recipe.style.display = "";
+
+            count++;
+
+        } else {
+
+            recipe.style.display = "none";
+
+        }
+
+    });
+
+
+    visibleCount.textContent = count;
+
+
+    if (count === 0) {
+
+        noSearchResults.style.display = "block";
+
+    } else {
+
+        noSearchResults.style.display = "none";
+
+    }
+
+}
+
+
+// Search while typing
+
+searchInput.addEventListener(
+    "input",
+    filterRecipes
+);
+
+
+// Filter changes
+
+difficultyFilter.addEventListener(
+    "change",
+    filterRecipes
+);
+
+
+timeFilter.addEventListener(
+    "change",
+    filterRecipes
+);
+
+
+// Clear filters
+
+clearFilters.addEventListener(
+    "click",
+    function() {
+
+        searchInput.value = "";
+
+        difficultyFilter.value = "all";
+
+        timeFilter.value = "all";
+
+        filterRecipes();
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>
