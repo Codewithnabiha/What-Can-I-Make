@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cooking History | What Can I Make?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="navbar-left">
+
+        <button
+            class="menu-btn"
+            type="button"
+            onclick="toggleMenu(event)"
+        >
+            ☰
+        </button>
+
+        <a href="/" class="brand">
+
+            <span class="brand-icon">
+                🍳
+            </span>
+
+            <span>
+                What Can I Make?
+            </span>
+
+        </a>
+
+        <div id="extraMenu" class="extra-menu">
+
+            <a href="/history">
+                🕐 Cooking History
+            </a>
+
+            <a href="/settings">
+                ⚙️ Settings
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <nav class="nav-links">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#find">
+            Find Recipes
+        </a>
+
+        <a href="/#categories">
+            Categories
+        </a>
+
+        <a href="/favorites">
+            ❤️ Favorites
+        </a>
+
+        <a href="/my-recipes">
+            📝 My Recipes
+        </a>
+
+        {% if session.get("logged_in") %}
+
+            <span class="user-greeting">
+                Hi, {{ session.get("username") }} 👋
+            </span>
+
+            <a href="/signout">
+                Log Out
+            </a>
+
+        {% else %}
+
+            <a href="/login">
+                Login
+            </a>
+
+        {% endif %}
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="section recipes">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span class="eyebrow">
+                YOUR KITCHEN JOURNEY
+            </span>
+
+            <h1>
+                Cooking History
+            </h1>
+
+        </div>
+
+        <a href="/">
+            Find Recipes →
+        </a>
+
+    </div>
+
+
+    {% if recipes %}
+
+        <div class="recipe-grid">
+
+            {% for recipe in recipes %}
+
+                <a
+                    href="{{ url_for(
+                        'recipe_detail',
+                        recipe_name=recipe.name
+                    ) }}"
+                    class="recipe-card"
+                >
+
+                    <div class="recipe-image">
+
+                        <span>
+                            {{ recipe.emoji }}
+                        </span>
+
+                    </div>
+
+
+                    <div class="recipe-info">
+
+                        <h3>
+                            {{ recipe.name }}
+                        </h3>
+
+                        <p>
+                            {{ recipe.ingredients | join(" · ") }}
+                        </p>
+
+                        <div class="recipe-meta">
+
+                            <span>
+                                ⏱ {{ recipe.time }}
+                            </span>
+
+                            <span>
+                                {{ recipe.difficulty }}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+            {% endfor %}
+
+        </div>
+
+    {% else %}
+
+        <div class="empty-message">
+
+            <h2>
+                No cooking history yet 🍳
+            </h2>
+
+            <p>
+                Recipes you view will appear here.
+            </p>
+
+            <a
+                href="/#find"
+                class="primary-btn"
+            >
+                Find My Recipes →
+            </a>
+
+        </div>
+
+    {% endif %}
+
+</section>
+
+</main>
+
+
+<script>
+
+function toggleMenu(event) {
+
+    event.stopPropagation();
+
+    const menu =
+        document.getElementById("extraMenu");
+
+    menu.classList.toggle("show");
+}
+
+
+document.addEventListener("click", function(event) {
+
+    const menu =
+        document.getElementById("extraMenu");
+
+    const menuButton =
+        document.querySelector(".menu-btn");
+
+    if (
+        menu &&
+        !menu.contains(event.target) &&
+        !menuButton.contains(event.target)
+    ) {
+
+        menu.classList.remove("show");
+
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>
