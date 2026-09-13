@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        {{ recipe.name }} | What Can I Make?
+    </title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <a href="/" class="brand">
+
+        <span class="brand-icon">
+            🍳
+        </span>
+
+        <span>
+            What Can I Make?
+        </span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#find">
+            Find Recipes
+        </a>
+
+        <a href="/#categories">
+            Categories
+        </a>
+
+        <a href="/#about">
+            About
+        </a>
+
+        {% if session.get("logged_in") %}
+
+            <a href="/favorites">
+                ❤️ Favorites
+            </a>
+
+        {% endif %}
+
+    </nav>
+
+</header>
+
+
+
+<!-- RECIPE -->
+
+<main>
+
+<section class="recipe-detail">
+
+
+    <a
+        href="javascript:history.back()"
+        class="back-link"
+    >
+        ← Back to recipes
+    </a>
+
+
+
+    <div class="recipe-detail-card">
+
+
+        <!-- RECIPE HEADER -->
+
+        <div class="recipe-detail-header">
+
+            <span class="recipe-emoji">
+                🍽️
+            </span>
+
+
+            <div>
+
+                <span class="eyebrow">
+                    RECIPE
+                </span>
+
+                <h1>
+                    {{ recipe.name }}
+                </h1>
+
+                <p>
+                    A delicious recipe made with
+                    what you already have.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FAVORITE BUTTON -->
+
+        {% if session.get("logged_in") %}
+
+            <div class="favorite-area">
+
+                {% if is_favorite %}
+
+                    <form
+                        action="{{ url_for(
+                            'remove_favorite',
+                            recipe_name=recipe.name
+                        ) }}"
+                        method="POST"
+                    >
+
+                        <button
+                            type="submit"
+                            class="favorite-btn saved"
+                        >
+                            ❤️ Saved to Favorites
+                        </button>
+
+                    </form>
+
+                {% else %}
+
+                    <form
+                        action="{{ url_for(
+                            'add_favorite',
+                            recipe_name=recipe.name
+                        ) }}"
+                        method="POST"
+                    >
+
+                        <button
+                            type="submit"
+                            class="favorite-btn"
+                        >
+                            🤍 Save to Favorites
+                        </button>
+
+                    </form>
+
+                {% endif %}
+
+            </div>
+
+        {% else %}
+
+            <div class="favorite-area">
+
+                <a
+                    href="{{ url_for('login') }}"
+                    class="favorite-btn"
+                >
+                    🤍 Login to Save Recipe
+                </a>
+
+            </div>
+
+        {% endif %}
+
+
+
+        <!-- INFO -->
+
+        <div class="recipe-detail-info">
+
+            <div>
+
+                <strong>
+                    ⏱ Time
+                </strong>
+
+                <span>
+                    {{ recipe.time }}
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    ⭐ Difficulty
+                </strong>
+
+                <span>
+                    {{ recipe.difficulty }}
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- INGREDIENTS -->
+
+        <div class="recipe-content">
+
+            <div>
+
+                <h2>
+                    🛒 Ingredients
+                </h2>
+
+
+                <ul class="ingredient-list">
+
+                    {% for ingredient in recipe.ingredients %}
+
+                        <li>
+                            ✓ {{ ingredient }}
+                        </li>
+
+                    {% endfor %}
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- INSTRUCTIONS -->
+
+            <div>
+
+                <h2>
+                    👩‍🍳 How to Make It
+                </h2>
+
+
+                <ol class="instructions">
+
+                    {% for step in recipe.steps %}
+
+                        <li>
+                            {{ step }}
+                        </li>
+
+                    {% endfor %}
+
+                </ol>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <a href="/" class="brand">
+
+            <span class="brand-icon">
+                🍳
+            </span>
+
+            <span>
+                What Can I Make?
+            </span>
+
+        </a>
+
+        <p>
+            Make more. Waste less. Eat well.
+        </p>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 What Can I Make?
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
