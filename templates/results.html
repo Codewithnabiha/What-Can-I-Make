@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Your Recipes | What Can I Make?</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <a href="/" class="brand">
+
+        <span class="brand-icon">
+            🍳
+        </span>
+
+        <span>
+            What Can I Make?
+        </span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#find">
+            Find Recipes
+        </a>
+
+        <a href="/#categories">
+            Categories
+        </a>
+
+        <a href="/#about">
+            About
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- RESULTS -->
+
+<main>
+
+<section class="results-section">
+
+
+    <div class="results-heading">
+
+        <span class="eyebrow">
+            YOUR INGREDIENTS
+        </span>
+
+        <h1>
+            Here's what you can make 🍽️
+        </h1>
+
+        <p>
+            We found recipes using only the ingredients
+            you already have.
+        </p>
+
+    </div>
+
+
+
+    <!-- INGREDIENTS -->
+
+    <div class="your-ingredients">
+
+        {% for ingredient in ingredients %}
+
+            <span class="chip">
+                {{ ingredient }}
+            </span>
+
+        {% endfor %}
+
+    </div>
+
+
+
+    <!-- RECIPES -->
+
+    {% if recipes %}
+
+        <div class="results-grid">
+
+            {% for recipe in recipes %}
+
+                <div class="result-card">
+
+
+                    <div class="match">
+
+                        {{ recipe.match_percentage }}% match
+
+                    </div>
+
+
+                    <h2>
+                        {{ recipe.name }}
+                    </h2>
+
+
+                    <p>
+
+                        ⏱ {{ recipe.time }}
+
+                        ·
+
+                        {{ recipe.difficulty }}
+
+                    </p>
+
+
+                    <div class="result-info">
+
+                        <strong>
+                            Ingredients:
+                        </strong>
+
+                        <span>
+
+                            {{ recipe.ingredients | join(", ") }}
+
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="{{ url_for(
+                            'recipe_detail',
+                            recipe_name=recipe.name
+                        ) }}"
+                        class="view-recipe-btn"
+                    >
+
+                        View Recipe →
+
+                    </a>
+
+
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+
+    {% else %}
+
+
+        <div class="no-results">
+
+            <h2>
+                😕 No complete recipes found
+            </h2>
+
+            <p>
+                Try adding a few more ingredients
+                to your kitchen.
+            </p>
+
+            <a href="/#find">
+                ← Try Again
+            </a>
+
+        </div>
+
+
+    {% endif %}
+
+
+</section>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <a href="/" class="brand">
+
+            <span class="brand-icon">
+                🍳
+            </span>
+
+            <span>
+                What Can I Make?
+            </span>
+
+        </a>
+
+        <p>
+            Make more. Waste less. Eat well.
+        </p>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 What Can I Make?
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
