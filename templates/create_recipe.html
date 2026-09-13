@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Create Recipe | What Can I Make?</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="/" class="brand">
+
+        <span class="brand-icon">
+            🍳
+        </span>
+
+        <span>
+            What Can I Make?
+        </span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#find">
+            Find Recipes
+        </a>
+
+        <a href="/#categories">
+            Categories
+        </a>
+
+        <a href="/favorites">
+            ❤️ Favorites
+        </a>
+
+        <a href="/my-recipes">
+            📝 My Recipes
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= CREATE RECIPE ================= -->
+
+<main>
+
+<section class="create-recipe-page">
+
+
+    <!-- PAGE HEADER -->
+
+    <div class="create-recipe-header">
+
+        <span class="eyebrow">
+            YOUR KITCHEN
+        </span>
+
+        <h1>
+            Create Your Recipe
+        </h1>
+
+        <p>
+            Turn your favorite idea into a recipe
+            you'll always have handy.
+        </p>
+
+    </div>
+
+
+
+    <!-- ERROR -->
+
+    {% if error %}
+
+        <div class="form-error">
+            ⚠️ {{ error }}
+        </div>
+
+    {% endif %}
+
+
+
+    <!-- FORM CARD -->
+
+    <form
+        action="{{ url_for('create_recipe') }}"
+        method="POST"
+        class="create-recipe-card"
+    >
+
+
+        <!-- RECIPE DETAILS -->
+
+        <div class="form-section">
+
+            <div class="form-section-title">
+
+                <span class="section-icon">
+                    🍽️
+                </span>
+
+                <div>
+
+                    <h2>
+                        Recipe Details
+                    </h2>
+
+                    <p>
+                        Give your recipe a name and
+                        some basic information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RECIPE NAME -->
+
+            <div class="form-group">
+
+                <label for="name">
+                    Recipe Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="e.g. Creamy Chicken Pasta"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- TIME + DIFFICULTY -->
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label for="time">
+                        ⏱ Cooking Time
+                    </label>
+
+                    <input
+                        type="text"
+                        id="time"
+                        name="time"
+                        placeholder="e.g. 30 min"
+                        required
+                    >
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="difficulty">
+                        ⭐ Difficulty
+                    </label>
+
+                    <select
+                        id="difficulty"
+                        name="difficulty"
+                        required
+                    >
+
+                        <option value="">
+                            Select difficulty
+                        </option>
+
+                        <option value="Easy">
+                            Easy
+                        </option>
+
+                        <option value="Medium">
+                            Medium
+                        </option>
+
+                        <option value="Hard">
+                            Hard
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- INGREDIENTS -->
+
+        <div class="form-section">
+
+            <div class="form-section-title">
+
+                <span class="section-icon">
+                    🛒
+                </span>
+
+                <div>
+
+                    <h2>
+                        Ingredients
+                    </h2>
+
+                    <p>
+                        List everything you'll need.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="ingredients">
+                    Ingredients
+                </label>
+
+                <textarea
+                    id="ingredients"
+                    name="ingredients"
+                    rows="7"
+                    placeholder="Chicken, pasta, cream, garlic, onion..."
+                    required
+                ></textarea>
+
+                <small>
+                    💡 Separate each ingredient with a comma.
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- INSTRUCTIONS -->
+
+        <div class="form-section">
+
+            <div class="form-section-title">
+
+                <span class="section-icon">
+                    👩‍🍳
+                </span>
+
+                <div>
+
+                    <h2>
+                        How to Make It
+                    </h2>
+
+                    <p>
+                        Add the steps for preparing your recipe.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="instructions">
+                    Cooking Instructions
+                </label>
+
+                <textarea
+                    id="instructions"
+                    name="instructions"
+                    rows="12"
+                    placeholder="1. Prepare the ingredients...&#10;2. Heat the pan...&#10;3. Add the ingredients...&#10;4. Cook and serve..."
+                    required
+                ></textarea>
+
+                <small>
+                    💡 You can write each step on a new line.
+                </small>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ACTIONS -->
+
+        <div class="recipe-form-actions">
+
+            <a
+                href="{{ url_for('my_recipes') }}"
+                class="cancel-btn"
+            >
+                Cancel
+            </a>
+
+
+            <button
+                type="submit"
+                class="save-recipe-btn"
+            >
+                💾 Save Recipe
+            </button>
+
+        </div>
+
+
+    </form>
+
+</section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <a href="/" class="brand">
+
+            <span class="brand-icon">
+                🍳
+            </span>
+
+            <span>
+                What Can I Make?
+            </span>
+
+        </a>
+
+        <p>
+            Make more. Waste less. Eat well.
+        </p>
+
+    </div>
+
+
+    <p class="copyright">
+        © 2026 What Can I Make?
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
