@@ -16,3 +16,4 @@ pycparser==3.0
 requests==2.34.2
 urllib3==2.7.0
 Werkzeug==3.1.8
+Flask-Mail==0.10.0
