@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cooking Stats | What Can I Make?</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+    <style>
+
+        .stats-page {
+            padding: 80px 8%;
+        }
+
+        .stats-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .stats-header h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 48px;
+            margin: 10px 0;
+        }
+
+        .stats-header p {
+            color: #777;
+            font-size: 17px;
+        }
+
+        .stats-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .stat-number {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #777;
+            font-size: 16px;
+        }
+
+        .stats-message {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 18px;
+        }
+
+        @media (max-width: 800px) {
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-header h1 {
+                font-size: 36px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <div class="navbar-left">
+
+        <button
+            class="menu-btn"
+            type="button"
+            onclick="toggleMenu(event)"
+        >
+            ☰
+        </button>
+
+        <a href="/" class="brand">
+
+            <span class="brand-icon">
+                🍳
+            </span>
+
+            <span>
+                What Can I Make?
+            </span>
+
+        </a>
+
+        <div id="extraMenu" class="extra-menu">
+
+            <a href="/history">
+                🕐 Cooking History
+            </a>
+
+            <a href="/stats">
+                📊 Cooking Stats
+            </a>
+
+            <a href="/settings">
+                ⚙️ Settings
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <nav class="nav-links">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#find">
+            Find Recipes
+        </a>
+
+        <a href="/#categories">
+            Categories
+        </a>
+
+        <a href="/favorites">
+            ❤️ Favorites
+        </a>
+
+        <a href="/my-recipes">
+            📝 My Recipes
+        </a>
+
+        {% if session.get("logged_in") %}
+
+            <span class="user-greeting">
+                Hi, {{ session.get("username") }} 👋
+            </span>
+
+            <a href="/signout">
+                Log Out
+            </a>
+
+        {% else %}
+
+            <a href="/login">
+                Login
+            </a>
+
+        {% endif %}
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<section class="stats-page">
+
+    <div class="stats-header">
+
+        <span class="eyebrow">
+            YOUR COOKING JOURNEY
+        </span>
+
+        <h1>
+            Your Cooking Stats 📊
+        </h1>
+
+        <p>
+            A little look at your journey in the kitchen.
+        </p>
+
+    </div>
+
+
+    <div class="stats-grid">
+
+        <!-- RECIPES VIEWED -->
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                👀
+            </div>
+
+            <div class="stat-number">
+                {{ recipes_viewed }}
+            </div>
+
+            <div class="stat-label">
+                Recipes Viewed
+            </div>
+
+        </div>
+
+
+        <!-- FAVORITES -->
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                ❤️
+            </div>
+
+            <div class="stat-number">
+                {{ favorites_count }}
+            </div>
+
+            <div class="stat-label">
+                Favorite Recipes
+            </div>
+
+        </div>
+
+
+        <!-- MY RECIPES -->
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                📝
+            </div>
+
+            <div class="stat-number">
+                {{ my_recipes_count }}
+            </div>
+
+            <div class="stat-label">
+                My Recipes
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="stats-message">
+
+        🍳 Keep exploring and cooking!
+
+    </div>
+
+</section>
+
+</main>
+
+
+<script>
+
+function toggleMenu(event) {
+
+    event.stopPropagation();
+
+    const menu =
+        document.getElementById("extraMenu");
+
+    menu.classList.toggle("show");
+
+}
+
+
+document.addEventListener("click", function(event) {
+
+    const menu =
+        document.getElementById("extraMenu");
+
+    const menuButton =
+        document.querySelector(".menu-btn");
+
+    if (
+        menu &&
+        !menu.contains(event.target) &&
+        !menuButton.contains(event.target)
+    ) {
+
+        menu.classList.remove("show");
+
+    }
+
+});
+
+</script>
+
+</body>
+
+</html>
