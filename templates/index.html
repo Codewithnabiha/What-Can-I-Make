@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>What Can I Make?</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <!-- LEFT SIDE -->
+
+    <div class="navbar-left">
+
+        <!-- HAMBURGER -->
+
+        <button
+            class="menu-btn"
+            type="button"
+            onclick="toggleMenu(event)"
+        >
+            ☰
+        </button>
+
+
+        <!-- LOGO -->
+
+        <a href="/" class="brand">
+
+            <span class="brand-icon">
+                🍳
+            </span>
+
+            <span>
+                What Can I Make?
+            </span>
+
+        </a>
+
+
+        <!-- EXTRA MENU -->
+
+        <div
+            id="extraMenu"
+            class="extra-menu"
+        >
+
+            <a href="/history">
+                🕐 Cooking History
+            </a>
+
+            <a href="{{ url_for('surprise_me') }}" class="scan-btn">
+
+    <span>🎲</span>
+
+    Surprise Me!
+
+</a>
+<a href="/cooking-stats">
+    📊 Cooking Stats
+</a>
+
+
+            
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN NAVIGATION -->
+
+    <nav class="nav-links">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#find">
+            Find Recipes
+        </a>
+
+        <a href="/#categories">
+            Categories
+        </a>
+
+        <a href="/favorites">
+            ❤️ Favorites
+        </a>
+
+        <a href="/my-recipes">
+            📝 My Recipes
+        </a>
+
+
+        {% if session.get("logged_in") %}
+
+            <span class="user-greeting">
+                Hi, {{ session.get("username") }} 👋
+            </span>
+
+            <a href="/signout">
+                Log Out
+            </a>
+
+       {% else %}
+
+    <a href="/login">
+        Login
+    </a>
+
+    <a href="/signup">
+        Sign Up
+    </a>
+
+{% endif %}
+
+    </nav>
+
+</header>
+
+
+  
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <span class="eyebrow">
+      ✨ Turn what you have into something delicious
+    </span>
+
+    <h1>
+      What can you<br>
+      <em>make today?</em>
+    </h1>
+
+    <p class="hero-text">
+      Tell us what's already in your kitchen and we'll find recipes
+      you can actually make.
+    </p>
+
+
+    <!-- INGREDIENT BOX -->
+
+    <div class="ingredient-box" id="find">
+
+      <div class="ingredient-title">
+        What ingredients do you have?
+      </div>
+
+
+      <!-- SUGGESTED INGREDIENTS -->
+
+      <div class="suggested-title">
+        Quick add
+      </div>
+
+      <div class="suggested-ingredients">
+
+        <button class="suggested-chip" data-ingredient="eggs">
+          🥚 Eggs
+        </button>
+
+        <button class="suggested-chip" data-ingredient="flour">
+          🌾 Flour
+        </button>
+
+        <button class="suggested-chip" data-ingredient="milk">
+          🥛 Milk
+        </button>
+
+        <button class="suggested-chip" data-ingredient="sugar">
+          🍬 Sugar
+        </button>
+
+        <button class="suggested-chip" data-ingredient="chocolate">
+          🍫 Chocolate
+        </button>
+
+        <button class="suggested-chip" data-ingredient="cheese">
+          🧀 Cheese
+        </button>
+
+        <button class="suggested-chip" data-ingredient="chicken">
+          🍗 Chicken
+        </button>
+
+        <button class="suggested-chip" data-ingredient="potato">
+          🥔 Potato
+        </button>
+
+        <button class="suggested-chip" data-ingredient="bread">
+          🍞 Bread
+        </button>
+
+        <button class="suggested-chip" data-ingredient="tomato">
+          🍅 Tomato
+        </button>
+
+      </div>
+
+
+      <!-- CUSTOM INPUT -->
+
+      <div class="ingredient-top">
+
+        <span class="search-icon">⌕</span>
+
+        <input
+          type="text"
+          id="ingredientInput"
+          placeholder="Or type an ingredient..."
+        >
+
+        <button
+          type="button"
+          class="add-btn"
+          id="addIngredientBtn"
+        >
+          Add
+        </button>
+
+      </div>
+
+
+      <!-- SELECTED INGREDIENTS -->
+
+      <div class="selected-title">
+        Your ingredients
+      </div>
+
+      <div class="chips" id="chips">
+
+        <span class="empty-message">
+          No ingredients selected yet
+        </span>
+
+      </div>
+
+
+      <!-- FIND BUTTON -->
+
+      <button class="primary-btn" id="findButton">
+
+        Find My Recipes
+
+        <span>→</span>
+
+      </button>
+
+    </div>
+
+
+    <button class="scan-btn">
+
+      <span>📷</span>
+
+      Scan my fridge with AI
+
+    </button>
+
+  </div>
+
+
+  <!-- HERO ART -->
+
+  <div class="hero-art">
+
+    <div class="blob"></div>
+
+    <div class="floating-card card-one">
+
+      <span>🥞</span>
+
+      <div>
+        <strong>Milk Pancakes</strong>
+        <small>100% match · 15 min</small>
+      </div>
+
+    </div>
+
+
+    <div class="plate">
+      🍳
+    </div>
+
+
+    <div class="floating-card card-two">
+
+      <span>💚</span>
+
+      <div>
+        <strong>Made with what you have</strong>
+        <small>No extra shopping needed</small>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="section" id="categories">
+
+  <div class="section-heading">
+
+    <div>
+      <span class="eyebrow">
+        EXPLORE
+      </span>
+
+      <h2>
+        What are you in the mood for?
+      </h2>
+    </div>
+
+    <a href="{{ url_for('category_page', category='all') }}">
+      View all →
+    </a>
+
+  </div>
+
+
+  <div class="category-grid">
+
+    <a
+      class="category-card breakfast"
+      href="{{ url_for('category_page', category='breakfast') }}"
+    >
+      <span>🍳</span>
+      <strong>Breakfast</strong>
+      <small>Start your day right</small>
+    </a>
+
+
+    <a
+      class="category-card quick"
+      href="{{ url_for('category_page', category='quick') }}"
+    >
+      <span>⚡</span>
+      <strong>Quick & Easy</strong>
+      <small>Ready in 30 minutes</small>
+    </a>
+
+
+    <a
+      class="category-card pakistani"
+      href="{{ url_for('category_page', category='pakistani') }}"
+    >
+      <span>🇵🇰</span>
+      <strong>Pakistani Favorites</strong>
+      <small>Desi comfort food</small>
+    </a>
+
+
+    <a
+      class="category-card budget"
+      href="{{ url_for('category_page', category='budget') }}"
+    >
+      <span>💰</span>
+      <strong>Budget Friendly</strong>
+      <small>Delicious on a budget</small>
+    </a>
+
+  </div>
+
+</section>
+
+
+<!-- POPULAR RECIPES -->
+
+<section class="section recipes">
+
+  <div class="section-heading">
+
+    <div>
+
+      <span class="eyebrow">
+        POPULAR RIGHT NOW
+      </span>
+
+      <h2>
+        Recipes you might love
+      </h2>
+
+    </div>
+
+    <a href="{{ url_for('category_page', category='all') }}">
+      See all recipes →
+    </a>
+
+  </div>
+
+
+  <div class="recipe-grid">
+
+    {% for recipe in popular_recipes %}
+
+      <a
+        href="{{ url_for(
+          'recipe_detail',
+          recipe_name=recipe.name
+        ) }}"
+        class="recipe-card"
+      >
+
+        <div class="recipe-image image-{{ ['one', 'two', 'three'][loop.index0] }}">
+
+          <span>
+            {{ recipe.emoji }}
+          </span>
+
+          <b>
+            Popular
+          </b>
+
+        </div>
+
+
+        <div class="recipe-info">
+
+          <div class="rating">
+
+            ★★★★★
+
+            <small>
+              4.9
+            </small>
+
+          </div>
+
+
+          <h3>
+            {{ recipe.name }}
+          </h3>
+
+
+          <p>
+            {{ recipe.ingredients | join(" · ") }}
+          </p>
+
+
+          <div class="recipe-meta">
+
+            <span>
+              ⏱ {{ recipe.time }}
+            </span>
+
+            <span>
+              {{ recipe.difficulty }}
+            </span>
+
+          </div>
+
+        </div>
+
+      </a>
+
+    {% endfor %}
+
+  </div>
+
+</section>
+<!-- Feature -->
+<!-- SMART MEAL PLANNER -->
+<section class="meal-planner-section">
+
+    <div class="meal-planner-content">
+
+        <div class="meal-planner-icon">
+            📅
+        </div>
+
+        <span class="meal-planner-label">
+            PLAN YOUR WEEK
+        </span>
+
+        <h2>
+            Make your week<br>
+            <span>deliciously simple.</span>
+        </h2>
+
+        <p>
+            Let us plan your breakfast, lunch and dinner
+            using recipes you already love.
+        </p>
+
+        <a href="{{ url_for('meal_planner') }}" class="meal-planner-btn">
+            Plan My Week
+            <span>→</span>
+        </a>
+
+    </div>
+
+    <div class="meal-preview">
+
+        <div class="preview-title">
+            <span>🍽️</span>
+            This Week
+        </div>
+
+        <div class="preview-day">
+            <div>
+                <strong>Monday</strong>
+                <small>Breakfast</small>
+            </div>
+            <span>🍳 Omelette</span>
+        </div>
+
+        <div class="preview-day">
+            <div>
+                <strong>Tuesday</strong>
+                <small>Lunch</small>
+            </div>
+            <span>🍝 Creamy Pasta</span>
+        </div>
+
+        <div class="preview-day">
+            <div>
+                <strong>Wednesday</strong>
+                <small>Dinner</small>
+            </div>
+            <span>🍛 Chicken Biryani</span>
+        </div>
+
+        <div class="preview-day">
+            <div>
+                <strong>Thursday</strong>
+                <small>Breakfast</small>
+            </div>
+            <span>🥞 Pancakes</span>
+        </div>
+
+    </div>
+
+</section>
+<!-- FOOTER -->
+
+<footer id="about">
+
+  <div class="footer-brand">
+
+    <a href="/" class="brand">
+
+      <span class="brand-icon">
+        🍳
+      </span>
+
+      <span>
+        What Can I Make?
+      </span>
+
+    </a>
+
+    <p>
+      Make more. Waste less. Eat well.
+    </p>
+
+  </div>
+
+
+  <div class="footer-links">
+
+    <a href="#find">
+      Find Recipes
+    </a>
+
+    <a href="#">
+      My Kitchen
+    </a>
+
+    <a href="#">
+      Budget Mode
+    </a>
+
+    <a href="#">
+      Saved Recipes
+    </a>
+
+  </div>
+
+
+  <p class="copyright">
+    © 2026 What Can I Make?
+  </p>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+<script>
+
+function toggleMenu(event) {
+
+    event.stopPropagation();
+
+    const menu =
+        document.getElementById("extraMenu");
+
+    menu.classList.toggle("show");
+}
+
+
+document.addEventListener("click", function(event) {
+
+    const menu =
+        document.getElementById("extraMenu");
+
+    const menuButton =
+        document.querySelector(".menu-btn");
+
+    if (
+        menu &&
+        !menu.contains(event.target) &&
+        !menuButton.contains(event.target)
+    ) {
+
+        menu.classList.remove("show");
+
+    }
+
+});
+
+</script>
+</body>
+</html>
